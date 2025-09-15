@@ -10,15 +10,24 @@ authors = [
     {name = "Your Name", email = "your.email@example.com"},
 ]
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.11,<4.0"
 dependencies = [
     "docling",
+    "fastapi",
+    "uvicorn[standard]",
+    "python-multipart",
+    "python-magic-bin;platform_system=='Windows'",
+    "python-magic;platform_system!='Windows'",
 ]
+
+[tool.setuptools]
+py-modules = ["parse_document", "advanced_parsing", "verify_setup"]
 
 [project.scripts]
 parse-doc = "parse_document:main"
 verify-docling-setup = "verify_setup:main"
+docling-api = "start_api:main"
 
 [tool.uv]
 dev-dependencies = [

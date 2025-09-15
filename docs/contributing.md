@@ -115,13 +115,20 @@ We have two levels of commit message validation:
 2. **Server Validation**: GitHub Actions that validate all commits in pull requests
 
 To set up local validation:
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4971418 (feat: init project)
 - On Unix-like systems: Run `.github/setup_commit_hooks.sh`
 - On Windows: Run `.github/setup_commit_hooks.ps1`
 
 The server validation automatically runs on all pull requests and will prevent merging if any commit messages don't follow the Conventional Commits specification.
 
+<<<<<<< HEAD
 The validation is configured through `commitlint.config.js` which extends the conventional commit rules.
 
+=======
+>>>>>>> 4971418 (feat: init project)
 ## Testing
 
 - Write tests for new functionality
@@ -154,4 +161,8 @@ The validation is configured through `commitlint.config.js` which extends the co
 
 ## Code of Conduct
 
+<<<<<<< HEAD
 Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+=======
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+>>>>>>> 4971418 (feat: init project)
